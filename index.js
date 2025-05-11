@@ -62,8 +62,6 @@ const validateDOB = (dob) => {
     return (
         age > 17 &&
         age < 56 &&
-        (monthDiff > 0 ||
-            (monthDiff === 0 && today.getDate() >= birthDate.getDate()))
     );
 };
 
